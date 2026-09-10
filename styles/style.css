@@ -25,7 +25,7 @@
 /*========== GLOBAL ============*/
 :root {
   --background: oklch(20% 0.01596 284.9);
-  --foreground: oklch(100% 0.00011 271.2);
+  --foreground: oklch(100% 0.00011 271.152);
   --card: oklch(24.9% 0.021 284.8);
   --card-foreground: oklch(77.3% 0.00009 271.2);
   --muted: oklch(0.27 0 0);
@@ -33,7 +33,7 @@
   --destructive: oklch(70% 0.2 22);
   --destructive-muted: oklch(70% 0.25 28 / 20%);
   --accent: oklch(86.6% 0.14758 204.1);
-  --accent-foreground: oklch(43.8% 0.04 301.9);
+  --accent-foreground: oklch(86.542% 0.14745 204.065 / 0.2);
   --color-border: oklch(35% 0.02 301.904);
 
   --success: oklch(70% 0.17 145);
@@ -47,7 +47,7 @@
 
   --font-sans: "Montserrat", sans-serif;
 
-  --border-radius: 2rem;
+  --border-radius: 1rem;
   --transition-duration: 0.2s;
 
   --container-width: 1320px;
@@ -55,7 +55,7 @@
 }
 
 html {
-  scroll-padding-top: 4rem;
+  scroll-padding-top: 6rem;
 }
 
 body {
@@ -86,7 +86,10 @@ body {
 }
 
 .section {
-  border: 1px solid var(--color-border);
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: var(--border-radius);
   background-color: var(--card);
 }
 
@@ -131,6 +134,11 @@ h2::before {
   height: 100%;
   background-color: var(--accent);
   border-radius: var(--border-radius);
+}
+
+h3 {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
 }
 
 /*========== HEADER ============*/
@@ -191,11 +199,69 @@ h2::before {
   width: 20rem;
   aspect-ratio: 1;
   overflow: hidden;
-  border-radius: var(--border-radius);
+  border-radius: 2rem;
   box-shadow: 0 0 20px var(--accent);
 }
 
 .hero__image {
+}
+
+.hero__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: var(--border-radius);
+  background-color: var(--card);
+  transition-duration: var(--transition-duration);
+}
+
+.hero__button:hover {
+  background-color: var(--accent-foreground);
+}
+
+.hero__button::before {
+  content: "";
+  width: 2rem;
+  aspect-ratio: 1;
+  background: url("../assets/images/arrow.svg") no-repeat center / contain;
+}
+
+/* SKILLS */
+
+.skills {
+}
+
+.skills__title {
+}
+
+.skills__tag-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills__title-tag {
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills__list-item {
+  display: flex;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--background);
+  transition-duration: var(--transition-duration);
+}
+
+.skills__list-item:hover {
+  background-color: var(--accent-foreground);
 }
 
 /*========== FOOTER ============*/
