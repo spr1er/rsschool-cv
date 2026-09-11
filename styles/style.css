@@ -174,6 +174,7 @@ h3 {
 
 /* HERO */
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -207,18 +208,22 @@ h3 {
 }
 
 .hero__button {
-  position: relative;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 3rem;
   aspect-ratio: 1;
+  border: 1px solid transparent;
   border-radius: var(--border-radius);
   background-color: var(--card);
   transition-duration: var(--transition-duration);
 }
 
 .hero__button:hover {
+  border-color: var(--accent);
   background-color: var(--accent-foreground);
 }
 
@@ -255,13 +260,34 @@ h3 {
 .skills__list-item {
   display: flex;
   padding: 0.5rem 1rem;
+  border: 1px solid transparent;
   border-radius: var(--border-radius);
   background-color: var(--background);
   transition-duration: var(--transition-duration);
 }
 
 .skills__list-item:hover {
+  border-color: var(--accent);
   background-color: var(--accent-foreground);
 }
 
+/* CODE */
+.code__content {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--accent);
+}
+
+/* PROJECTS */
+
+
 /*========== FOOTER ============*/
+.footer__github {
+  fill: var(--accent);
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer__rsschool {
+}
