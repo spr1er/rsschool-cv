@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="icon" type="image/png" href="./assets/favicon.png" >
+    <link rel="stylesheet" href="./styles/normalize.css" >
+    <link rel="stylesheet" href="./styles/style.css" >
+    <title>CV</title>
+  </head>
+  <body>
+    <div class="bg-blobs">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+    </div>
+    <div class="container">
+      <header class="header">
+        <nav class="header__nav">
+          <ul class="header__list flex-center">
+            <li class="header__list-item">
+              <a href="#contact" class="item__link flex-center link">contact</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#summary" class="item__link flex-center link">summary</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#skills" class="item__link flex-center link">skills</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#code" class="item__link flex-center link">code</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#projects" class="item__link flex-center link"
+                >projects</a
+              >
+            </li>
+            <li class="header__list-item">
+              <a href="#education" class="item__link flex-center link"
+                >education</a
+              >
+            </li>
+            <li class="header__list-item">
+              <a href="#language" class="item__link flex-center link"
+                >language</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main flex-column">
+        <section class="hero">
+          <div class="hero__text flex-column">
+            <h1 class="hero__title">Alexander Ivanov</h1>
+            <p class="hero__paragraph">Frontend Developer</p>
+          </div>
+          <div class="hero__block-image">
+            <img
+              src="./assets/images/avatar.jpg"
+              alt="Alex Ivanov"
+              class="hero__image"
+            >
+          </div>
+          <a href="#contact" class="hero__button"></a>
+        </section>
+        <section class="contact section">
+          <h2 class="contact__header" id="contact">Contact</h2>
+          <ul class="contact__list">
+            <li class="contact__list-item">
+              <a href="mail:home@mail.ru" class="contact__item-link tag"
+                >home@mail.ru</a
+              >
+            </li>
+            <li class="contact__list-item">
+              <a href="tel:+123456789012" class="contact__item-link tag"
+                >+123456789012</a
+              >
+            </li>
+            <li class="contact__list-item">
+              <a href="https://discord.com/" class="contact__item-link tag"
+                >@1234</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="summary section">
+          <h2 class="summary__title" id="summary">Summary</h2>
+          <p class="summary__paragraph">
+            I’m a beginner frontend developer. I’m aiming to get a job in this
+            field, which is why I enrolled in this course.
+          </p>
+        </section>
+        <section class="skills section">
+          <h2 class="skills__title" id="skills">Skills</h2>
+          <div class="skills__tag-block">
+            <h3 class="skills__title-tag">hard</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item tag">HTML</li>
+              <li class="skills__list-item tag">CSS</li>
+              <li class="skills__list-item tag">SCSS</li>
+              <li class="skills__list-item tag">TailwindCSS</li>
+              <li class="skills__list-item tag">JavaScript</li>
+              <li class="skills__list-item tag">TypeScript</li>
+              <li class="skills__list-item tag">React</li>
+              <li class="skills__list-item tag">Vite</li>
+              <li class="skills__list-item tag">shadcn</li>
+              <li class="skills__list-item tag">NodeJS</li>
+              <li class="skills__list-item tag">Figma</li>
+              <li class="skills__list-item tag">Git</li>
+              <li class="skills__list-item tag">GitHub</li>
+            </ul>
+          </div>
+          <div class="skills__tag-block">
+            <h3 class="skills__title-tag">soft</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item tag">Communication</li>
+              <li class="skills__list-item tag">Teamwork</li>
+              <li class="skills__list-item tag">Adaptability</li>
+              <li class="skills__list-item tag">Creativity</li>
+            </ul>
+          </div>
+        </section>
+        <section class="code section">
+          <h2 class="code__title" id="code">Code Examples</h2>
+          <pre class="code__content">
+            <code class="code__lang">
+function filterGifts(gifts) { 
+  return gifts.filter(gift => !gift.includes('#')); 
+}
+            </code>
+          </pre>
+        </section>
+        <section class="projects section">
+          <h2 class="projects__title" id="projects">Projects</h2>
+          <div class="projects__inner">
+            <article class="projects__card">
+              <a
+                href="https://github.com/spr1er/movie-tracker"
+                class="card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__block-image">
+                  <img
+                    src="./assets/images/project1.png"
+                    alt="movie tracker"
+                    class="card__image"
+                  >
+                </div>
+                <div class="card__block-info">
+                  <h3 class="card__title">Movie Tracker</h3>
+                  <p class="card__paragraph">
+                    A web application for tracking and managing your movie
+                    watchlist. Browse films, view ratings, and organize your
+                    cinema experience with an intuitive interface.
+                  </p>
+                  <ul class="card__list">
+                    <li class="card__list-item tag">React</li>
+                    <li class="card__list-item tag">TailwindCSS</li>
+                    <li class="card__list-item tag">shadcn</li>
+                    <li class="card__list-item tag">Git</li>
+                    <li class="card__list-item tag">GitHub</li>
+                    <li class="card__list-item tag">Vite</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="projects__card">
+              <a
+                href="https://github.com/spr1er/movie-tracker"
+                class="card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__block-image">
+                  <img
+                    src="./assets/images/project2.png"
+                    alt="movie tracker"
+                    class="card__image"
+                  >
+                </div>
+                <div class="card__block-info">
+                  <h3 class="card__title">Good Deeds</h3>
+                  <p class="card__paragraph">
+                    A personal habit tracker that helps you monitor positive
+                    actions and build streaks. Track daily activities, visualize
+                    progress, and stay motivated on your self-improvement
+                    journey
+                  </p>
+                  <ul class="card__list">
+                    <li class="card__list-item tag">React</li>
+                    <li class="card__list-item tag">TailwindCSS</li>
+                    <li class="card__list-item tag">shadcn</li>
+                    <li class="card__list-item tag">Git</li>
+                    <li class="card__list-item tag">GitHub</li>
+                    <li class="card__list-item tag">Vite</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+          </div>
+        </section>
+        <section class="education section">
+          <h2 class="education__title" id="education">Education</h2>
+          <p class="education__paragraph">
+            Bachelor’s degree: Computer Science and Computing Technology
+          </p>
+        </section>
+        <section class="language section">
+          <h2 class="language__title" id="language">Language</h2>
+          <p class="language__paragraph">English: A2</p>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="straight"></div>
+        <a
+          href="https://github.com/spr1er"
+          class="footer__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><svg
+            class="footer__github"
+            width="1024"
+            height="1024"
+            viewBox="0 0 1024 1024"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+              transform="scale(64)"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <p class="footer__paragraph">2026</p>
+        <a
+          href="https://rs.school/courses/javascript"
+          class="footer__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="./assets/images/rs-school-logo.svg"
+            alt="Logo RS School"
+            class="footer__rsschool"
+        ></a>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
