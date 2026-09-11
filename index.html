@@ -9,30 +9,41 @@
     <title>CV</title>
   </head>
   <body>
+    <div class="bg-blobs">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+    </div>
     <div class="container">
       <header class="header">
         <nav class="header__nav">
           <ul class="header__list flex-center">
             <li class="header__list-item">
-              <a href="#contact" class="item__link flex-center">contact</a>
+              <a href="#contact" class="item__link flex-center link">contact</a>
             </li>
             <li class="header__list-item">
-              <a href="#summary" class="item__link flex-center">summary</a>
+              <a href="#summary" class="item__link flex-center link">summary</a>
             </li>
             <li class="header__list-item">
-              <a href="#skills" class="item__link flex-center">skills</a>
+              <a href="#skills" class="item__link flex-center link">skills</a>
             </li>
             <li class="header__list-item">
-              <a href="#code" class="item__link flex-center">code</a>
+              <a href="#code" class="item__link flex-center link">code</a>
             </li>
             <li class="header__list-item">
-              <a href="#projects" class="item__link flex-center">projects</a>
+              <a href="#projects" class="item__link flex-center link"
+                >projects</a
+              >
             </li>
             <li class="header__list-item">
-              <a href="#education" class="item__link flex-center">education</a>
+              <a href="#education" class="item__link flex-center link"
+                >education</a
+              >
             </li>
             <li class="header__list-item">
-              <a href="#language" class="item__link flex-center">language</a>
+              <a href="#language" class="item__link flex-center link"
+                >language</a
+              >
             </li>
           </ul>
         </nav>
@@ -56,25 +67,25 @@
           <h2 class="contact__header" id="contact">Contact</h2>
           <ul class="contact__list">
             <li class="contact__list-item">
-              <a href="mail:home@mail.ru" class="contact__item-link"
+              <a href="mail:home@mail.ru" class="contact__item-link tag"
                 >home@mail.ru</a
               >
             </li>
             <li class="contact__list-item">
-              <a href="tel:+123456789012" class="contact__item-link"
+              <a href="tel:+123456789012" class="contact__item-link tag"
                 >+123456789012</a
               >
             </li>
             <li class="contact__list-item">
-              <a href="https://discord.com/" class="contact__item-link"
+              <a href="https://discord.com/" class="contact__item-link tag"
                 >@1234</a
               >
             </li>
           </ul>
         </section>
         <section class="summary section">
-          <h2 class="" id="summary">Summary</h2>
-          <p class="">
+          <h2 class="summary__title" id="summary">Summary</h2>
+          <p class="summary__paragraph">
             I’m a beginner frontend developer. I’m aiming to get a job in this
             field, which is why I enrolled in this course.
           </p>
@@ -84,28 +95,28 @@
           <div class="skills__tag-block">
             <h3 class="skills__title-tag">hard</h3>
             <ul class="skills__list">
-              <li class="skills__list-item tag-hard">HTML</li>
-              <li class="skills__list-item tag-hard">CSS</li>
-              <li class="skills__list-item tag-hard">SCSS</li>
-              <li class="skills__list-item tag-hard">TailwindCSS</li>
-              <li class="skills__list-item tag-hard">JavaScript</li>
-              <li class="skills__list-item tag-hard">TypeScript</li>
-              <li class="skills__list-item tag-hard">React</li>
-              <li class="skills__list-item tag-hard">Vite</li>
-              <li class="skills__list-item tag-hard">shadcn</li>
-              <li class="skills__list-item tag-hard">NodeJS</li>
-              <li class="skills__list-item tag-hard">Figma</li>
-              <li class="skills__list-item tag-hard">Git</li>
-              <li class="skills__list-item tag-hard">GitHub</li>
+              <li class="skills__list-item tag">HTML</li>
+              <li class="skills__list-item tag">CSS</li>
+              <li class="skills__list-item tag">SCSS</li>
+              <li class="skills__list-item tag">TailwindCSS</li>
+              <li class="skills__list-item tag">JavaScript</li>
+              <li class="skills__list-item tag">TypeScript</li>
+              <li class="skills__list-item tag">React</li>
+              <li class="skills__list-item tag">Vite</li>
+              <li class="skills__list-item tag">shadcn</li>
+              <li class="skills__list-item tag">NodeJS</li>
+              <li class="skills__list-item tag">Figma</li>
+              <li class="skills__list-item tag">Git</li>
+              <li class="skills__list-item tag">GitHub</li>
             </ul>
           </div>
           <div class="skills__tag-block">
             <h3 class="skills__title-tag">soft</h3>
             <ul class="skills__list">
-              <li class="skills__list-item tag-hard">Communication</li>
-              <li class="skills__list-item tag-hard">Teamwork</li>
-              <li class="skills__list-item tag-hard">Adaptability</li>
-              <li class="skills__list-item tag-hard">Creativity</li>
+              <li class="skills__list-item tag">Communication</li>
+              <li class="skills__list-item tag">Teamwork</li>
+              <li class="skills__list-item tag">Adaptability</li>
+              <li class="skills__list-item tag">Creativity</li>
             </ul>
           </div>
         </section>
@@ -121,11 +132,73 @@ function filterGifts(gifts) {
         </section>
         <section class="projects section">
           <h2 class="projects__title" id="projects">Projects</h2>
-          <ul class="projects__list">
-            <li class="projects__list-item">
-              <a href="#" class="projects__item-link">pr1</a>
-            </li>
-          </ul>
+          <div class="projects__inner">
+            <article class="projects__card">
+              <a
+                href="https://github.com/spr1er/movie-tracker"
+                class="card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__block-image">
+                  <img
+                    src="./assets/images/project1.png"
+                    alt="movie tracker"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__block-info">
+                  <h3 class="card__title">Movie Tracker</h3>
+                  <p class="card__paragraph">
+                    A web application for tracking and managing your movie
+                    watchlist. Browse films, view ratings, and organize your
+                    cinema experience with an intuitive interface.
+                  </p>
+                  <ul class="card__list">
+                    <li class="card__list-item tag">React</li>
+                    <li class="card__list-item tag">TailwindCSS</li>
+                    <li class="card__list-item tag">shadcn</li>
+                    <li class="card__list-item tag">Git</li>
+                    <li class="card__list-item tag">GitHub</li>
+                    <li class="card__list-item tag">Vite</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="projects__card">
+              <a
+                href="https://github.com/spr1er/movie-tracker"
+                class="card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__block-image">
+                  <img
+                    src="./assets/images/project2.png"
+                    alt="movie tracker"
+                    class="card__image"
+                  />
+                </div>
+                <div class="card__block-info">
+                  <h3 class="card__title">Good Deeds</h3>
+                  <p class="card__paragraph">
+                    A personal habit tracker that helps you monitor positive
+                    actions and build streaks. Track daily activities, visualize
+                    progress, and stay motivated on your self-improvement
+                    journey
+                  </p>
+                  <ul class="card__list">
+                    <li class="card__list-item tag">React</li>
+                    <li class="card__list-item tag">TailwindCSS</li>
+                    <li class="card__list-item tag">shadcn</li>
+                    <li class="card__list-item tag">Git</li>
+                    <li class="card__list-item tag">GitHub</li>
+                    <li class="card__list-item tag">Vite</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+          </div>
         </section>
         <section class="education section">
           <h2 class="education__title" id="education">Education</h2>
@@ -139,8 +212,9 @@ function filterGifts(gifts) {
         </section>
       </main>
       <footer class="footer">
+        <div class="straight"></div>
         <a
-          href="https://rs.school/courses/javascript"
+          href="https://github.com/spr1er"
           class="footer__link"
           target="_blank"
           rel="noopener noreferrer"
@@ -163,7 +237,7 @@ function filterGifts(gifts) {
         </a>
         <p class="footer__paragraph">2026</p>
         <a
-          href="https://github.com/spr1er"
+          href="https://rs.school/courses/javascript"
           class="footer__link"
           target="_blank"
           rel="noopener noreferrer"
